@@ -146,7 +146,7 @@
 
                 <!-- Text on image -->
                 <p aria-hidden="true"
-                  class="pointer-events-none absolute bottom-[15%] left-[7%] -rotate-3 italic text-4xl leading-[1.1] text-white  sm:text-3xl lg:text-4xl">
+                  class="pointer-events-none absolute bottom-[15%] left-[7%] -rotate-3 italic text-4xl font-normal leading-[1.1] text-white  sm:text-3xl lg:text-4xl">
                     <span class="block">restoring</span>
                     <span class="block">renewing</span>
                     <span class="block">reducing</span>
@@ -155,7 +155,7 @@
 
           <!-- Content card -->
           <div class="bg-cream-bold rounded-xl px-8 py-12 sm:px-12 sm:py-16">
-            <p class="body-text italic font-normal!">
+            <p class="body-text italic font-thin!">
               When you choose ECOS, you're doing more than cleaning. You're restoring water to endangered
               habitats, supporting renewable energy, and helping remove more carbon than we produce. After
               reducing our impact across carbon, water, and energy, we go even one step further by offsetting
@@ -333,7 +333,7 @@
 
         <!-- Heading -->
         <h2 id="videoHeading"
-          class="heading-4 absolute left-1/2 top-[55%] 2xl:top-[50%] z-10 w-[85%] -translate-x-1/2 text-center text-white [text-shadow:0_1px_6px_rgba(0,0,0,.35)] md:w-auto md:whitespace-nowrap">
+          class="heading-3 absolute left-1/2 top-[55%] 2xl:top-[50%] z-10 w-[85%] -translate-x-1/2 text-center text-white [text-shadow:0_1px_6px_rgba(0,0,0,.35)] md:w-auto md:whitespace-nowrap">
           See the Impact Behind the Clean
         </h2>
       </div>
@@ -402,7 +402,8 @@
         </div>
       </div>
     </section>
-    <!--social section-->
+  
+ <!--social section-->
     <section class="overflow-hidden bg-white py-6">
       <div id="social-slider" class="splide" aria-label="Social videos">
         <div class="splide__track">
@@ -411,14 +412,10 @@
             <!-- Slide with VIDEO -->
             <li class="splide__slide">
               <a href="#" aria-label="Watch video: ECOS climate positive cleaning products"
-                class="group relative block aspect-[3/4] overflow-hidden rounded-lg bg-slate-200"
-                onmouseenter="this.querySelector('video').play()" onmouseleave="this.querySelector('video').pause()"
-                onfocus="this.querySelector('video').play()" onblur="this.querySelector('video').pause()">
-                <video src="assets/ECOS-Climate-Positive-Cleaning-Products.mp4" poster=""
+                class="group relative block aspect-[3/4] overflow-hidden rounded-lg bg-slate-200">
+                <video src="assets/ECOS Climate Positive Cleaning Products.mp4" poster=""
                   class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" muted loop
-                  playsinline preload="metadata">
-                  <track kind="captions" src="assets/ecos-climate-positive.en.vtt" srclang="en" label="English" default>
-                </video>
+                  playsinline preload="metadata" onmouseenter="this.play()" onmouseleave="this.pause()"></video>
 
                 <!-- Play badge -->
                 <span class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-md bg-white/90">
@@ -478,7 +475,7 @@
         <div class="mx-auto mt-6 w-full lg:max-w-[35%] sm:max-w-[60%]">
           <form action="#" method="post" class="flex items-stretch rounded-md bg-white p-[3px]">
             <input type="email" name="email" aria-label="Email address" placeholder="Enter your email" required
-              class="min-w-0 flex-1 border-0 bg-white px-6 py-3 small-text outline-none focus:outline-none focus:ring-0  placeholder:text-black " />
+              class="min-w-0 flex-1 border-0 bg-white px-6 py-3 small-text outline-none focus:outline-none focus:ring-0  placeholder:text-black" />
             <button type="submit" class="btn-primary cursor-pointer shrink-0 rounded-none px-5 small-text font-medium">
               Submit
             </button>

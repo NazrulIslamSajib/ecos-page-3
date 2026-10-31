@@ -382,9 +382,6 @@
   .w-\[54\%\] {
     width: 54%;
   }
-  .w-\[60\%\] {
-    width: 60%;
-  }
   .w-\[60px\] {
     width: 60px;
   }
@@ -490,6 +487,16 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-b-\[1\.5px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1.5px;
+  }
+  .border-b-primary-blue\/20 {
+    border-bottom-color: color-mix(in srgb, #00587C 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-bottom-color: color-mix(in oklab, var(--color-primary-blue) 20%, transparent);
+    }
+  }
   .bg-\[\#2fb5e0\] {
     background-color: #2fb5e0;
   }
@@ -570,6 +577,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -694,6 +704,9 @@
     .hover\:bg-\[\#1da0cc\]:hover {
       background-color: #1da0cc;
     }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
   }
   .focus\:ring-0:focus {
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
@@ -707,9 +720,16 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .focus-visible\:outline-2:focus-visible {
+    outline-style: var(--tw-outline-style);
+    outline-width: 2px;
+  }
   .focus-visible\:outline-\[3px\]:focus-visible {
     outline-style: var(--tw-outline-style);
     outline-width: 3px;
+  }
+  .focus-visible\:outline-offset-4:focus-visible {
+    outline-offset: 4px;
   }
   .focus-visible\:outline-offset-\[3px\]:focus-visible {
     outline-offset: 3px;
@@ -771,9 +791,6 @@
     }
   }
   @media (width >= 48rem) {
-    .md\:hidden {
-      display: none;
-    }
     .md\:h-\[40px\] {
       height: 40px;
     }
@@ -821,6 +838,9 @@
     .lg\:flex {
       display: flex;
     }
+    .lg\:hidden {
+      display: none;
+    }
     .lg\:h-\[80px\] {
       height: 80px;
     }
@@ -863,8 +883,14 @@
     .\32 xl\:top-\[50\%\] {
       top: 50%;
     }
+    .\32 xl\:h-\[70px\] {
+      height: 70px;
+    }
     .\32 xl\:h-\[100px\] {
       height: 100px;
+    }
+    .\32 xl\:w-\[70px\] {
+      width: 70px;
     }
     .\32 xl\:w-\[100px\] {
       width: 100px;
@@ -884,21 +910,21 @@
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("/assets/fonts/GT-Walsheim-Ultra-Light-Trial-BF651b7fc72b236.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Ultra-Light-Trial-BF651b7fc72b236.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("/assets/fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "GT Walsheim";
-  src: url("/assets/fonts/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf") format("opentype");
+  src: url("assets/fonts/GT-Walsheim-Medium-Trial-BF651b7fc728fb3.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

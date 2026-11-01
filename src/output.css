@@ -661,6 +661,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-12 {
+    padding-top: calc(var(--spacing) * 12);
+  }
   .pb-\[60px\] {
     padding-bottom: 60px;
   }
@@ -673,6 +676,9 @@
   }
   .text-\[14px\] {
     font-size: 14px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .leading-\[0\.8\] {
     --tw-leading: 0.8;
@@ -940,6 +946,15 @@
     .lg\:gap-12 {
       gap: calc(var(--spacing) * 12);
     }
+    .lg\:py-1 {
+      padding-block: var(--spacing);
+    }
+    .lg\:py-18 {
+      padding-block: calc(var(--spacing) * 18);
+    }
+    .lg\:py-\[72px\] {
+      padding-block: 72px;
+    }
     .lg\:pb-\[100px\] {
       padding-bottom: 100px;
     }
@@ -967,8 +982,17 @@
     .\32 xl\:max-w-\[40\%\] {
       max-width: 40%;
     }
+    .\32 xl\:py-\[100px\] {
+      padding-block: 100px;
+    }
     .\32 xl\:pb-\[120px\] {
       padding-bottom: 120px;
+    }
+    .\32 xl\:text-\[46px\] {
+      font-size: 46px;
+    }
+    .\32 xl\:text-\[48px\] {
+      font-size: 48px;
     }
     @media (width >= 64rem) {
       .\32 xl\:lg\:h-\[100px\] {
